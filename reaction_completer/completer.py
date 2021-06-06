@@ -38,7 +38,6 @@ class ReactionCompleter(object):
         self._decomposition_chemicals = {}
         self._exchange_chemicals = {}
         self._linear_eq = {}
-
         self._inspect_target()
         self._prepare_precursors()
         self._setup_linear_equation()

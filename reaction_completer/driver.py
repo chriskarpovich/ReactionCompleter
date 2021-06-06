@@ -63,6 +63,7 @@ def try_balance(precursors_to_balance, target, substitution, all_precursors):
     target_to_balance = material_dict_to_info(target, substitution)
     completer = ReactionCompleter(precursors_to_balance, target_to_balance)
     solution = completer.compute_reactions()
+    
 
     return (
         target_to_balance.material_formula,

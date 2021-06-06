@@ -9,6 +9,7 @@ class FormulaException(Exception):
     """
     A chemical formula cannot be parsed.
     """
+    print('FormulaException')
     pass
 
 
@@ -17,6 +18,7 @@ class CannotBalance(Exception):
     A general exception suggesting that reaction completer
     is unable to create a valid reaction
     """
+    print('CannotBalance')
     pass
 
 
@@ -24,6 +26,7 @@ class TooFewPrecursors(CannotBalance):
     """
     Too few precursors cannot be balanced.
     """
+    print('TooFewPrecursors')
     pass
 
 
@@ -33,6 +36,7 @@ class TooManyPrecursors(CannotBalance):
 
     Ba + O + BaO + TiO2 == ? == BaTiO3
     """
+    print('TooManyPrecursors')
     pass
 
 
@@ -45,6 +49,7 @@ class StupidRecipe(CannotBalance):
     2. Target only has less than three elements: 2H + O == H2O
 
     """
+    print('StupidRecipe')
     pass
 
 
@@ -52,4 +57,5 @@ class ExpressionPrintException(CannotBalance):
     """
     A math formula cannot be printed.
     """
+    print('ExpressionPrintException')
     pass
